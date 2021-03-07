@@ -7,3 +7,71 @@
 #greeting-container {
   margin-top: 20px;
 }
+
+/*NAVBAR*/
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  top: 10;
+  /*potion: fixed;*/
+  z-index: 2;
+}
+
+.navbar a {
+  float:left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/*makes games go under the c button and not all the way to left*/
+.cdropdown {
+  overflow: hidden;
+  float: left;
+}
+
+.cdropdown .cdropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .cdropdown:hover .cdropbtn {
+  background-color: #ddd;
+  color: black;
+}
+
+.cdropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  color: black;
+  min-width: 160px;
+  z-index: 2;
+}
+
+.cdropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.cdropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.cdropdown:hover .cdropdown-content {
+  display: block;
+}

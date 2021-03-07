@@ -2,18 +2,43 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Jade's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
+  
   <body>
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
+      <!--nav var-->
+		<div id="navbar" class="navbar">
+		  <a href="./index.html">Home</a>
+		  
+		  <div class="cdropdown">
+		    <a class="cdropbtn" href="./c.html">Chinese
+		    </a>
+		    <div class="cdropdown-content">
+		      <a href="./c.html#c">Chinese</a>
+		      <a href="./c.html#photos">China Photos</a>
+		    </div>
+          </div>
+        </div>
+
+      <h1>Jade's Portfolio</h1>
+      <p>Hello everyone! My name is Jade Kaleel.</p>
+      <p>I was born and raised in Brooklyn NY.
+          I am currently a sophomore at Columbia University and I am majoring in Computer Science. 
+          Some of the courses I've enjoyed taking the most have been Chinese, 
+          Advanced Programming, and Data Structures.
+      </p>
+
+      <!-- EXTRA STUFF
       <p>Click <a href="/hello">here</a> to see content created by server code.</p>
+      <p>Here's a picture of my dog, Ghost! He's 8 months old. </p>
+      <img src="/images/ghost.jpg" />
       <p>Click here to get a random message:</p>
       <button onclick="addRandomGreeting()">Hello</button>
       <div id="greeting-container"></div>
+      -->
     </div>
   </body>
 </html>
