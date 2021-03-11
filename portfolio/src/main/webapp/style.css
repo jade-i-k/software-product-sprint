@@ -7,3 +7,71 @@
 #greeting-container {
   margin-top: 20px;
 }
+
+/* NAVBAR */
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  top: 10;
+  z-index: 2;
+}
+
+.navbar a {
+  color: #f2f2f2;
+  display: block;
+  float:left;
+  font-size: 16px;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* makes photos go under the china button
+and not all the way to left */
+.chinadropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.chinadropdown .chinadropbtn {
+  background-color: inherit;
+  border: none;
+  color: white;
+  font-family: inherit;
+  font-size: 16px;
+  margin: 0;
+  outline: none;
+  padding: 14px 16px;
+}
+
+.navbar a:hover, .chinadropdown:hover .chinadropbtn {
+  background-color: #ddd;
+  color: black;
+}
+
+.chinadropdown-content {
+  background-color: #333;
+  color: black;
+  display: none;
+  min-width: 160px;
+  position: absolute;
+  z-index: 2;
+}
+
+.chinadropdown-content a {
+  color: white;
+  display: block;
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.chinadropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.chinadropdown:hover .chinadropdown-content {
+  display: block;
+}
