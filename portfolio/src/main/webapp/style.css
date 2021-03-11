@@ -8,70 +8,70 @@
   margin-top: 20px;
 }
 
-/*NAVBAR*/
+/* NAVBAR */
 
 .navbar {
-  overflow: hidden;
   background-color: #333;
+  overflow: hidden;
   top: 10;
-  /*potion: fixed;*/
   z-index: 2;
 }
 
 .navbar a {
-  float:left;
-  display: block;
   color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  display: block;
+  float:left;
   font-size: 16px;
-}
-
-/*makes games go under the c button and not all the way to left*/
-.cdropdown {
-  overflow: hidden;
-  float: left;
-}
-
-.cdropdown .cdropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
   padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
+  text-align: center;
+  text-decoration: none;
 }
 
-.navbar a:hover, .cdropdown:hover .cdropbtn {
+/* makes photos go under the china button
+and not all the way to left */
+.chinadropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.chinadropdown .chinadropbtn {
+  background-color: inherit;
+  border: none;
+  color: white;
+  font-family: inherit;
+  font-size: 16px;
+  margin: 0;
+  outline: none;
+  padding: 14px 16px;
+}
+
+.navbar a:hover, .chinadropdown:hover .chinadropbtn {
   background-color: #ddd;
   color: black;
 }
 
-.cdropdown-content {
-  display: none;
-  position: absolute;
+.chinadropdown-content {
   background-color: #333;
   color: black;
+  display: none;
   min-width: 160px;
+  position: absolute;
   z-index: 2;
 }
 
-.cdropdown-content a {
-  float: none;
+.chinadropdown-content a {
   color: white;
+  display: block;
+  float: none;
   padding: 12px 16px;
   text-decoration: none;
-  display: block;
   text-align: left;
 }
 
-.cdropdown-content a:hover {
+.chinadropdown-content a:hover {
   background-color: #ddd;
 }
 
-.cdropdown:hover .cdropdown-content {
+.chinadropdown:hover .chinadropdown-content {
   display: block;
 }
