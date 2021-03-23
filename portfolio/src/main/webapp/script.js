@@ -26,8 +26,37 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+/** MAPS API KEY: AIzaSyCl-9FOAIwfu6528CDDunRi4G33-N9A9xM */
+
 google.charts.load('current', {'packages':['corechart']});
+google.charts.load('current', {
+       'packages': ['geochart'],
+        'mapsApiKey': 'AIzaSyCl-9FOAIwfu6528CDDunRi4G33-N9A9xM'});
+google.charts.setOnLoadCallback(drawMarkersMap);
 google.charts.setOnLoadCallback(drawChart);
+
+/** Creates a Markers Map and adds it to the page */
+function drawMarkersMap() {
+      var data = google.visualization.arrayToDataTable([
+        ['City'],
+        ['Beijing'],
+        ['Xian'],
+        ['Shanghai'],
+        ['Guilin'],
+        ['Chengdu']
+      ]);
+
+      var options = {
+        region: 'CN',
+        displayMode: 'markers',
+        colorAxis: {colors: ['green', 'blue']},
+        width:450,
+        height:250
+      };
+
+      var chart = new google.visualization.GeoChart(document.getElementById('markers_div'));
+      chart.draw(data, options);
+};
 
 /** Creates a chart and adds it to the page. */
 function drawChart() {
@@ -42,9 +71,9 @@ function drawChart() {
         ]);
 
   const options = {
-    'title': 'Years Spent Learning CS',
-    'width':500,
-    'height':400
+    title: 'Years Spent Learning CS',
+    width:500,
+    height:400
   };
 
   const chart = new google.visualization.PieChart(
