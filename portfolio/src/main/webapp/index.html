@@ -7,8 +7,8 @@
     <script src="script.js"></script>
   </head>
   
-  <body>
-    <div id="content">
+  <body id="content">
+    <div>
       <!-- nav var -->
 	  <div id="navbar" class="navbar">
 		<a href="./index.html">Home</a>
@@ -20,36 +20,45 @@
 		    <a href="./china.html#photos">China Photos</a>
 		  </div>
         </div>
+
+        <div class="chartdropdown">
+	      <a class="chartdropbtn" href="./chart.html">Chart</a>
+	      <div class="chartdropdown-content">
+		    <a href="./chart.html#chart">Chart</a>
+          </div>
+        </div>
       </div>
+    </div>
 
-      <h1>Jade's Portfolio</h1>
-      <p>Hello everyone! My name is Jade Kaleel.</p>
-      <p>I was born and raised in Brooklyn NY.
-          I am currently a sophomore at Columbia University and I am majoring in Computer Science. 
-          Some of the courses I've enjoyed taking the most have been Chinese, 
-          Advanced Programming, and Data Structures.
-      </p>
+    <h1>Jade's Portfolio</h1>
+    <p>Hello everyone! My name is Jade Kaleel.</p>
+    <p>
+      I was born and raised in Brooklyn NY.
+      I am currently a sophomore at Columbia University and I am majoring in Computer Science. 
+      Some of the courses I've enjoyed taking the most have been Chinese, 
+      Advanced Programming, and Data Structures.
+    </p>
 
-      <!--Servlets Walkthrough-->
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
+    <!--Servlets Walkthrough-->
+    <p>Click <a href="/hello">here</a> to see content created by server code.</p>
       
-      <!--Fetch Walkthough-->
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+    <!--Fetch Walkthough-->
+    <p>Click here to get a random message:</p>
+    <button onclick="addRandomGreeting()">Hello</button>
+    <div id="greeting-container"></div>
       
-      <!--Client Input-->
-      <form action="/form-handler" method="POST">
-        <p>Feel free to send me a message here: </p>
-        <textarea name="text-input">Hi</textarea>
-        <br/>
-        <input type="submit" />
-      </form>
+    <!--Client Input-->
+    <form action="/form-handler" method="POST">
+      <p>Feel free to send me a message here: </p>
+      <textarea name="text-input">Hi</textarea>
+      <br/>
+      <input type="submit" />
+    </form>
       
-      <!-- EXTRA STUFF
-      <p>Here's a picture of my dog, Ghost! He's 8 months old. </p>
-      <img src="/images/ghost.jpg" />
-      -->
+    <!-- EXTRA STUFF
+    <p>Here's a picture of my dog, Ghost! He's 8 months old. </p>
+    <img src="/images/ghost.jpg" />
+    -->
     </div>
   </body>
 </html>
